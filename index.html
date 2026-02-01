@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Demo Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin: 30px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: black;
+        }
+        .description {
+            line-height: 1.6;
+            color: #666;
+            margin: 20px 0;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-link:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 20px;
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Neural Network Demonstration Video</h1>
+        
+        <div class="video-container">
+            <video controls preload="metadata">
+                <source src="demo.m4v" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video. You can <a href="demo.m4v" download>download the video</a> instead.</p>
+            </video>
+        </div>
+        
+        <div class="description">
+            <p><strong>Abstract:</strong> This video demonstrates the proposed neural network approach and its performance on the test dataset.</p>
+            
+            <p><strong>Video Content:</strong></p>
+            <ul>
+                <li>Overview of the network architecture</li>
+                <li>Training process visualization</li>
+                <li>Comparison with baseline methods</li>
+                <li>Real-time inference examples</li>
+            </ul>
+            
+            <p><strong>Technical Details:</strong> The demonstration shows results obtained using the methodology described in the submitted paper.</p>
+        </div>
+        
+        <a href="demo.m4v" download class="download-link">Download Video (M4V Format)</a>
+    </div>
+</body>
+</html>
